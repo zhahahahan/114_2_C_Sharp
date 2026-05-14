@@ -1,0 +1,253 @@
+﻿namespace Cell_Phone_Test
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            // 以下為介面元件初始化程式碼（已修改）：
+            // 1. 將所有顯示文字(Text)改為繁體中文
+            // 2. 將字型統一設定為 18pt，便於閱讀
+            // 3. 適度調整每個元件的大小與位置，使介面在較大字型時仍保持良好配置
+            // 注意：此區為自動產生的 Designer 程式碼，僅變更屬性值，不改變事件綁定或邏輯。
+
+            this.exitButton = new System.Windows.Forms.Button();
+            this.createObjectButton = new System.Windows.Forms.Button();
+            this.objectPropertiesGroupBox = new System.Windows.Forms.GroupBox();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.modelLabel = new System.Windows.Forms.Label();
+            this.brandLabel = new System.Windows.Forms.Label();
+            this.outputPriceLabel = new System.Windows.Forms.Label();
+            this.outputModelLabel = new System.Windows.Forms.Label();
+            this.outputBrandLabel = new System.Windows.Forms.Label();
+            this.enterDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.brandTextBox = new System.Windows.Forms.TextBox();
+            this.promptPriceLabel = new System.Windows.Forms.Label();
+            this.promptModelLabel = new System.Windows.Forms.Label();
+            this.promptBrandLabel = new System.Windows.Forms.Label();
+            this.objectPropertiesGroupBox.SuspendLayout();
+            this.enterDataGroupBox.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // exitButton - 結束按鈕
+            // 設定為繁體中文顯示、較大的字型並調整大小與位置
+            this.exitButton.Location = new System.Drawing.Point(220, 340);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(120, 50);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "結束";
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // createObjectButton - 建立物件按鈕
+            // 設定為繁體中文顯示、較大的字型並調整大小與位置
+            this.createObjectButton.Location = new System.Drawing.Point(80, 340);
+            this.createObjectButton.Name = "createObjectButton";
+            this.createObjectButton.Size = new System.Drawing.Size(120, 50);
+            this.createObjectButton.TabIndex = 6;
+            this.createObjectButton.Text = "建立物件";
+            this.createObjectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createObjectButton.UseVisualStyleBackColor = true;
+            this.createObjectButton.Click += new System.EventHandler(this.createObjectButton_Click);
+            // 
+            // objectPropertiesGroupBox - 顯示建立後物件屬性的群組
+            // 調整大小以容納較大字型的標籤與輸出欄位
+            this.objectPropertiesGroupBox.Controls.Add(this.priceLabel);
+            this.objectPropertiesGroupBox.Controls.Add(this.modelLabel);
+            this.objectPropertiesGroupBox.Controls.Add(this.brandLabel);
+            this.objectPropertiesGroupBox.Controls.Add(this.outputPriceLabel);
+            this.objectPropertiesGroupBox.Controls.Add(this.outputModelLabel);
+            this.objectPropertiesGroupBox.Controls.Add(this.outputBrandLabel);
+            this.objectPropertiesGroupBox.Location = new System.Drawing.Point(20, 162);
+            this.objectPropertiesGroupBox.Name = "objectPropertiesGroupBox";
+            this.objectPropertiesGroupBox.Size = new System.Drawing.Size(380, 160);
+            this.objectPropertiesGroupBox.TabIndex = 5;
+            this.objectPropertiesGroupBox.TabStop = false;
+            this.objectPropertiesGroupBox.Text = "物件屬性";
+            this.objectPropertiesGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // priceLabel - 顯示價格的輸出欄位
+            this.priceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.priceLabel.Location = new System.Drawing.Point(150, 110);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(200, 40);
+            this.priceLabel.TabIndex = 7;
+            this.priceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // modelLabel - 顯示型號的輸出欄位
+            this.modelLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modelLabel.Location = new System.Drawing.Point(150, 65);
+            this.modelLabel.Name = "modelLabel";
+            this.modelLabel.Size = new System.Drawing.Size(200, 40);
+            this.modelLabel.TabIndex = 6;
+            this.modelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // brandLabel - 顯示品牌的輸出欄位
+            this.brandLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.brandLabel.Location = new System.Drawing.Point(150, 20);
+            this.brandLabel.Name = "brandLabel";
+            this.brandLabel.Size = new System.Drawing.Size(200, 40);
+            this.brandLabel.TabIndex = 4;
+            this.brandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.brandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // outputPriceLabel - 輸出欄位的標題 (價格)
+            this.outputPriceLabel.AutoSize = true;
+            this.outputPriceLabel.Location = new System.Drawing.Point(40, 118);
+            this.outputPriceLabel.Name = "outputPriceLabel";
+            this.outputPriceLabel.Size = new System.Drawing.Size(60, 29);
+            this.outputPriceLabel.TabIndex = 5;
+            this.outputPriceLabel.Text = "價格：";
+            this.outputPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // outputModelLabel - 輸出欄位的標題 (型號)
+            this.outputModelLabel.AutoSize = true;
+            this.outputModelLabel.Location = new System.Drawing.Point(40, 73);
+            this.outputModelLabel.Name = "outputModelLabel";
+            this.outputModelLabel.Size = new System.Drawing.Size(60, 29);
+            this.outputModelLabel.TabIndex = 4;
+            this.outputModelLabel.Text = "型號：";
+            this.outputModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // outputBrandLabel - 輸出欄位的標題 (品牌)
+            this.outputBrandLabel.AutoSize = true;
+            this.outputBrandLabel.Location = new System.Drawing.Point(40, 33);
+            this.outputBrandLabel.Name = "outputBrandLabel";
+            this.outputBrandLabel.Size = new System.Drawing.Size(60, 29);
+            this.outputBrandLabel.TabIndex = 3;
+            this.outputBrandLabel.Text = "品牌：";
+            this.outputBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // enterDataGroupBox - 輸入手機資料的群組
+            // 將輸入欄位放大並調整位置以符合 18pt 字型
+            this.enterDataGroupBox.Controls.Add(this.priceTextBox);
+            this.enterDataGroupBox.Controls.Add(this.modelTextBox);
+            this.enterDataGroupBox.Controls.Add(this.brandTextBox);
+            this.enterDataGroupBox.Controls.Add(this.promptPriceLabel);
+            this.enterDataGroupBox.Controls.Add(this.promptModelLabel);
+            this.enterDataGroupBox.Controls.Add(this.promptBrandLabel);
+            this.enterDataGroupBox.Location = new System.Drawing.Point(20, 12);
+            this.enterDataGroupBox.Name = "enterDataGroupBox";
+            this.enterDataGroupBox.Size = new System.Drawing.Size(380, 140);
+            this.enterDataGroupBox.TabIndex = 4;
+            this.enterDataGroupBox.TabStop = false;
+            this.enterDataGroupBox.Text = "輸入手機資料";
+            this.enterDataGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // priceTextBox - 價格輸入欄位
+            // 加大高度以符合較大的字型
+            this.priceTextBox.Location = new System.Drawing.Point(150, 90);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(200, 35);
+            this.priceTextBox.TabIndex = 5;
+            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // modelTextBox - 型號輸入欄位
+            this.modelTextBox.Location = new System.Drawing.Point(150, 55);
+            this.modelTextBox.Name = "modelTextBox";
+            this.modelTextBox.Size = new System.Drawing.Size(200, 35);
+            this.modelTextBox.TabIndex = 4;
+            this.modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // brandTextBox - 品牌輸入欄位
+            this.brandTextBox.Location = new System.Drawing.Point(150, 20);
+            this.brandTextBox.Name = "brandTextBox";
+            this.brandTextBox.Size = new System.Drawing.Size(200, 35);
+            this.brandTextBox.TabIndex = 3;
+            this.brandTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // promptPriceLabel - 輸入欄位提示 (價格)
+            this.promptPriceLabel.AutoSize = true;
+            this.promptPriceLabel.Location = new System.Drawing.Point(40, 95);
+            this.promptPriceLabel.Name = "promptPriceLabel";
+            this.promptPriceLabel.Size = new System.Drawing.Size(60, 29);
+            this.promptPriceLabel.TabIndex = 2;
+            this.promptPriceLabel.Text = "價格：";
+            this.promptPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // promptModelLabel - 輸入欄位提示 (型號)
+            this.promptModelLabel.AutoSize = true;
+            this.promptModelLabel.Location = new System.Drawing.Point(40, 60);
+            this.promptModelLabel.Name = "promptModelLabel";
+            this.promptModelLabel.Size = new System.Drawing.Size(60, 29);
+            this.promptModelLabel.TabIndex = 1;
+            this.promptModelLabel.Text = "型號：";
+            this.promptModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // promptBrandLabel - 輸入欄位提示 (品牌)
+            this.promptBrandLabel.AutoSize = true;
+            this.promptBrandLabel.Location = new System.Drawing.Point(40, 27);
+            this.promptBrandLabel.Name = "promptBrandLabel";
+            this.promptBrandLabel.Size = new System.Drawing.Size(60, 29);
+            this.promptBrandLabel.TabIndex = 0;
+            this.promptBrandLabel.Text = "品牌：";
+            this.promptBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // Form1 - 主視窗
+            // 調整視窗大小以容納所有元件（18pt 字型）並設定視窗標題為繁體中文
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(420, 420);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.createObjectButton);
+            this.Controls.Add(this.objectPropertiesGroupBox);
+            this.Controls.Add(this.enterDataGroupBox);
+            this.Name = "Form1";
+            this.Text = "手機測試";
+            this.objectPropertiesGroupBox.ResumeLayout(false);
+            this.objectPropertiesGroupBox.PerformLayout();
+            this.enterDataGroupBox.ResumeLayout(false);
+            this.enterDataGroupBox.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button createObjectButton;
+        private System.Windows.Forms.GroupBox objectPropertiesGroupBox;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label modelLabel;
+        private System.Windows.Forms.Label brandLabel;
+        private System.Windows.Forms.Label outputPriceLabel;
+        private System.Windows.Forms.Label outputModelLabel;
+        private System.Windows.Forms.Label outputBrandLabel;
+        private System.Windows.Forms.GroupBox enterDataGroupBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox modelTextBox;
+        private System.Windows.Forms.TextBox brandTextBox;
+        private System.Windows.Forms.Label promptPriceLabel;
+        private System.Windows.Forms.Label promptModelLabel;
+        private System.Windows.Forms.Label promptBrandLabel;
+    }
+}
+
