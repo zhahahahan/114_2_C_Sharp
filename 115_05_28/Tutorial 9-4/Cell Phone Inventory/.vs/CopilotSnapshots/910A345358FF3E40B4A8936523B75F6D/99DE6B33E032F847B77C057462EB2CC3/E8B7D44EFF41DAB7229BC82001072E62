@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Cell_Phone_Inventory
+{
+    public partial class Form1 : Form
+    {
+        // 用來存儲 CellPhone 物件的清單
+        List<CellPhone> phoneList = new List<CellPhone>();
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // 此方法用於取得手機資料
+        // 接收一個 CellPhone 物件作為參數
+        // 將使用者輸入的資料指派給物件的屬性
+        private void GetPhoneData(CellPhone phone)
+        {
+            // 暫時變數，用來存儲價格
+            decimal price;
+
+            // 取得手機的品牌
+            phone.Brand = brandTextBox.Text;
+
+            // 取得手機的型號
+            phone.Model = modelTextBox.Text;
+
+            // 取得手機的價格
+            // 嘗試將輸入的文字轉換為十進位數
+            if (decimal.TryParse(priceTextBox.Text, out price))
+            {
+                phone.Price = price;
+            }
+            else
+            {
+                // 顯示錯誤訊息
+                MessageBox.Show("無效的價格");
+            }
+        }
+
+        // 新增手機按鈕的點擊事件處理程式
+        private void addPhoneButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        // 手機清單框的索引改變事件處理程式
+        private void phoneListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        // 結束按鈕的點擊事件處理程式
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單
+            this.Close();
+        }
+    }
+}
